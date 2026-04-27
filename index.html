@@ -5,28 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MA Traders | Official Store</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #1c1e21;
-              background-image: url('background.jpg'); background-size: cover;
-        .profile-img { width: 140px; height: 140px; border-radius: 50%; border: 5px solid #3498db; object-fit: cover; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        h1 { margin: 10px 0; font-size: 2.5rem; letter-spacing: 2px; }
-        .container { width: 90%; max-width: 1200px; margin: auto; padding: 40px 0; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-        .card { background: white; padding: 20px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.08); text-align: center; transition: transform 0.3s; }
-        .card:hover { transform: translateY(-10px); }
-        .card img { width: 100%; height: 250px; object-fit: cover; border-radius: 15px; margin-bottom: 20px; }
-        .price { color: #27ae60; font-size: 1.4rem; font-weight: bold; margin: 15px 0; }
-        .desc { font-size: 0.95rem; color: #555; line-height: 1.5; height: 45px; overflow: hidden; }
-        .whatsapp-btn { background-color: #25d366; color: white; padding: 12px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; transition: background 0.3s; }
-        .whatsapp-btn:hover { background-color: #128c7e; }
-        footer { background: #1a252f; color: white; text-align: center; padding: 40px; margin-top: 50px; }
+        /* Poori website ka background */
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-image: url('background.jpg'); /* Aapki background picture ka naam */
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            color: #fff; 
+        }
+
+        /* Overlay taake text parha jaye */
+        .overlay {
+            background: rgba(0, 0, 0, 0.6); /* Black shafaf parda */
+            min-height: 100vh;
+        }
+
+        header { 
+            padding: 60px 20px; 
+            text-align: center; 
+        }
+
+        .profile-img { 
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            border: 4px solid #3498db; 
+            object-fit: cover; 
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+        }
+
+        .container { 
+            width: 90%; 
+            max-width: 1200px; 
+            margin: auto; 
+            padding-bottom: 50px;
+        }
+
+        .product-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px; 
+        }
+
+        /* Transparent Cards */
+        .card { 
+            background: rgba(255, 255, 255, 0.15); /* White shafaf background */
+            backdrop-filter: blur(10px); /* Piche ki picture ko dhundla karega */
+            padding: 20px; 
+            border-radius: 20px; 
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center; 
+            transition: 0.3s;
+        }
+
+        .card:hover { 
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-5px); 
+        }
+
+        .card img { 
+            width: 100%; 
+            height: 230px; 
+            object-fit: cover; 
+            border-radius: 15px; 
+            margin-bottom: 15px; 
+        }
+
+        h3 { margin: 10px 0; color: #fff; }
+        .price { color: #2ecc71; font-size: 1.5rem; font-weight: bold; margin: 10px 0; }
+        .desc { font-size: 0.9rem; color: #ddd; margin-bottom: 20px; }
+
+        .whatsapp-btn { 
+            background-color: #25d366; 
+            color: white; 
+            padding: 12px 25px; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            display: inline-block; 
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 40px; 
+            background: rgba(0,0,0,0.8); 
+            margin-top: 50px; 
+        }
     </style>
 </head>
 <body>
 
+<div class="overlay">
     <header>
-        <img src="profile.jpg" alt="Owner" class="profile-img">
+        <img src="profile.jpg" alt="Shakeela Firdous" class="profile-img">
         <h1>MA TRADERS</h1>
-        <p>Premium Quality Jewelry, CCTV & Mobile Accessories</p>
+        <p>Premium Jewelry, CCTV & Quality Accessories</p>
     </header>
 
     <div class="container">
@@ -34,45 +111,44 @@
             
             <div class="card">
                 <img src="jewelry.jpg" alt="Jewelry">
-                <h3>Bridal Jewelry Set</h3>
-                <p class="desc">Elegant and latest designs for weddings and parties.</p>
-                <p class="price">Rs. 2,999</p>
-                <a href="https://wa.me/923232537675" class="whatsapp-btn">Buy on WhatsApp</a>
+                <h3>Bridal Jewelry</h3>
+                <p class="desc">Latest elegant designs for your special day.</p>
+                <p class="price">Rs. 3,500</p>
+                <a href="https://wa.me/923232537675" class="whatsapp-btn">Order Now</a>
             </div>
 
             <div class="card">
                 <img src="cctv.jpg" alt="CCTV">
-                <h3>Night Vision Camera</h3>
-                <p class="desc">Complete HD security solution for your home.</p>
+                <h3>Security Cameras</h3>
+                <p class="desc">Full HD Night Vision for 24/7 Security.</p>
                 <p class="price">Rs. 15,500</p>
                 <a href="https://wa.me/923232537675" class="whatsapp-btn">Inquiry Now</a>
             </div>
 
             <div class="card">
                 <img src="charger.jpg" alt="Charger">
-                <h3>Fast Mobile Charger</h3>
-                <p class="desc">High-speed charging for all Android & iPhone models.</p>
-                <p class="price">Rs. 1,950</p>
-                <a href="https://wa.me/923232537675" class="whatsapp-btn">Order Now</a>
+                <h3>Fast Chargers</h3>
+                <p class="desc">Original quality fast charging accessories.</p>
+                <p class="price">Rs. 1,900</p>
+                <a href="https://wa.me/923232537675" class="whatsapp-btn">Buy on WhatsApp</a>
             </div>
 
             <div class="card">
                 <img src="clothes.jpg" alt="Clothes">
-                <h3>Ladies Premium Suits</h3>
-                <p class="desc">Soft fabric and beautiful prints for every season.</p>
-                <p class="price">Rs. 13,500</p>
-                <a href="https://wa.me/923232537675" class="whatsapp-btn">Contact for Stock</a>
+                <h3>Ladies Wear</h3>
+                <p class="desc">Top quality fabric and latest fashion suits.</p>
+                <p class="price">Rs. 12,800</p>
+                <a href="https://wa.me/923232537675" class="whatsapp-btn">Contact for Detail</a>
             </div>
 
         </div>
     </div>
 
     <footer>
-        <h3>Contact Us</h3>
-        <p>Location: DHA Phase 2, Karachi, Pakistan</p>
+        <p>MA Traders - Karachi, Pakistan</p>
         <p>WhatsApp: 03232537675</p>
-        <p>&copy; 2026 MA Traders. All Rights Reserved.</p>
     </footer>
+</div>
 
 </body>
 </html>
