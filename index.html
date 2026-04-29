@@ -206,3 +206,160 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --imou-blue: #0089cf;
+            --dark-bg: #1a1a1a;
+            --text-gray: #cccccc;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .product-card {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--dark-bg);
+            color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .product-info {
+            flex: 1;
+            padding: 40px;
+            min-width: 300px;
+        }
+
+        .product-image-section {
+            flex: 1;
+            background: radial-gradient(circle, #333 0%, #1a1a1a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            min-width: 300px;
+        }
+
+        h1 {
+            color: var(--imou-blue);
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 5px 0;
+            font-weight: 600;
+        }
+
+        .highlight-sub {
+            color: var(--imou-blue);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .key-highlights {
+            list-style: none;
+            padding: 0;
+        }
+
+        .key-highlights li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            color: var(--text-gray);
+            display: flex;
+            align-items: center;
+        }
+
+        .key-highlights li::before {
+            content: "•";
+            color: white;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: 0;
+        }
+
+        .badge-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .badge {
+            text-align: center;
+            font-size: 0.7rem;
+            width: 70px;
+        }
+
+        .badge img {
+            width: 40px;
+            filter: brightness(0) invert(1);
+            margin-bottom: 5px;
+        }
+
+        .main-img {
+            max-width: 100%;
+            height: auto;
+            z-index: 2;
+        }
+
+        @media (max-width: 768px) {
+            .product-card { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<section class="product-card">
+    <div class="product-info">
+        <h1>IMOU AOV PT</h1>
+        <h2>5MP Unlimited Battery Life</h2>
+        <div class="highlight-sub">4G + Wi-Fi Dual Connection</div>
+        
+        <h3>Key Highlights</h3>
+        <ul class="key-highlights">
+            <li>AOV PT (5MP) 3K UHD Image</li>
+            <li>4G+Wi-Fi Dual Connection</li>
+            <li>AI Powered Human Detection</li>
+            <li>Connect your home from anywhere</li>
+            <li>Built-in Mic & Speaker</li>
+            <li>Support up to 512GB SD Card</li>
+            <li>Model: IPC-B7ED-5M0TEA-EU</li>
+            <li>Configurable Region</li>
+            <li>AOV Mode</li>
+        </ul>
+
+        <div class="badge-container">
+            <div class="badge"><strong>4G/SIM</strong><br>Supported</div>
+            <div class="badge"><strong>Wi-Fi</strong><br>Supported</div>
+            <div class="badge"><strong>Solar</strong><br>Panel Built-in</div>
+        </div>
+    </div>
+
+    <div class="product-image-section">
+        <img src="33229.jpg" alt="IMOU AOV PT Security Camera" class="main-img">
+    </div>
+</section>
+
+</body>
+</html>
+
+
